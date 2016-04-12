@@ -1,0 +1,5 @@
+hr {
+    margin-bottom: $base-bottom-margin;
+    margin-bottom: calc(#{$base-bottom-margin} - 1px);
+    border-bottom-width: 1px;
+}

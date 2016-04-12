@@ -1,4 +1,74 @@
+body, html {
+    font-family: $base-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headline-font;
+    font-weight: $headline-font-weight;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: $base-bottom-margin;
+}
+
+h1 {
+    font-size: $base-font-size * 1.8;
+    line-height: $base-line-height * 3;
+
+    @media screen and (min-width: $breakpoint-portrait-tablet-min) {
+        font-size: $base-font-size * 2.6;
+        line-height: $base-line-height * 4;
+    }
+}
+
+h2 {
+    font-size: $base-font-size * 1.6;
+    line-height: $base-line-height * 3;
+
+    @media screen and (min-width: $breakpoint-portrait-tablet-min) {
+        font-size: $base-font-size * 2;
+        line-height: $base-line-height * 3
+    }
+}
+
+h3 {
+    font-size: $base-font-size * 1.4;
+    line-height: $base-line-height * 2;
+
+    @media screen and (min-width: $breakpoint-portrait-tablet-min) {
+        font-size: $base-font-size * 1.6;
+        line-height: $base-line-height * 3
+    }
+}
+
+h4 {
+    font-size: $base-font-size * 1.2;
+    line-height: $base-line-height * 2;
+}
+
+h5 {
+    font-size: $base-font-size;
+    line-height: $base-line-height * 2;
+}
+
+h6 {
+    font-size: $base-font-size * 0.8;
+    line-height: $base-line-height * 2;
+}
+
+
 p {
     font-size: $base-font-size;
-    line-height: $base-line-height;
+    line-height: $base-line-height * 2;
 }
