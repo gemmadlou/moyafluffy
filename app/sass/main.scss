@@ -1,5 +1,7 @@
 @import 'base/_sanitize';
 @import 'base/_variables';
 @import 'base/_typography';
+@import 'base/_helpers.scss';
 
 @import 'components/_scaffolding';
+@import 'components/_table';

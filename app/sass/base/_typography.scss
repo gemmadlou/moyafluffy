@@ -1,5 +1,6 @@
 body, html {
     font-family: $base-font;
+    color: $color-secondary;
 }
 
 h1,
@@ -69,6 +70,16 @@ h6 {
 
 
 p {
-    font-size: $base-font-size;
+
+    font-size: $base-font-size * 0.8;
     line-height: $base-line-height * 2;
+
+    @media screen and (min-width: $breakpont-mobile-mid) {
+        font-size: $base-font-size;
+    }
+
+}
+
+a {
+    color: $color-attention;
 }

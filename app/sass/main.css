@@ -236,7 +236,8 @@ textarea {
   Variables
 ---------*/
 body, html {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  color: #251F1A; }
 
 h1,
 h2,
@@ -293,12 +294,39 @@ h6 {
   line-height: 1.6rem; }
 
 p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.6rem; }
+  @media screen and (min-width: 383.5px) {
+    p {
+      font-size: 1rem; } }
+
+a {
+  color: #FB275A; }
+
+.fill-primary {
+  background-color: #F5A46A; }
+
+.fill-secondary {
+  background-color: #251F1A; }
+
+.fill-tertiary {
+  background-color: #927662; }
+
+.fill-attention {
+  background-color: #FB275A; }
+
+.fill-minor {
+  background-color: #F7EDF9; }
 
 hr {
   margin-bottom: 1.6rem;
   margin-bottom: calc(1.6rem - 1px);
   border-bottom-width: 1px; }
+
+.table {
+  width: 100%; }
+  .table td {
+    font-size: 1rem;
+    line-height: 1.6rem; }
 
 /*# sourceMappingURL=main.css.map */
