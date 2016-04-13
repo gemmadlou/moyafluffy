@@ -1,0 +1,33 @@
+/*
+ * .nav class element
+ */
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $gutter-width;
+
+    .nav__logo {
+
+    }
+
+    .nav__menu {
+
+    }
+
+    .nav__menu-item {
+        display: inline;
+        margin-left: $gutter-width;
+    }
+
+    a {
+        display: inline-block;
+        padding: $nav-padding;
+
+        button {
+            cursor: pointer;
+        }
+    }
+
+}

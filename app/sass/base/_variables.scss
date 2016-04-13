@@ -2,6 +2,7 @@
   Variables
 ---------*/
 
+$gutter-width: 0.8rem * 2;
 $base-line-height: 0.8rem;
 $base-font-size: 1rem;
 $base-bottom-margin: $base-line-height * 2;
@@ -19,3 +20,10 @@ $color-secondary: #251F1A;
 $color-tertiary: #927662;
 $color-attention: #FB275A;
 $color-minor: #F7EDF9;
+
+/** Links **/
+$link-color: $color-attention;
+$link-hover: #F77090;
+
+/** Nav **/
+$nav-padding: 5px 10px;

@@ -81,5 +81,10 @@ p {
 }
 
 a {
-    color: $color-attention;
+    color: $link-color;
+
+    &:hover,
+    &:active {
+        color: $link-hover;
+    }
 }

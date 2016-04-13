@@ -235,6 +235,8 @@ textarea {
 /*---------
   Variables
 ---------*/
+/** Links **/
+/** Nav **/
 body, html {
   font-family: "Poppins", sans-serif;
   color: #251F1A; }
@@ -302,6 +304,8 @@ p {
 
 a {
   color: #FB275A; }
+  a:hover, a:active {
+    color: #F77090; }
 
 .fill-primary {
   background-color: #F5A46A; }
@@ -328,5 +332,22 @@ hr {
   .table td {
     font-size: 1rem;
     line-height: 1.6rem; }
+
+/*
+ * .nav class element
+ */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.6rem; }
+  .nav .nav__menu-item {
+    display: inline;
+    margin-left: 1.6rem; }
+  .nav a {
+    display: inline-block;
+    padding: 5px 10px; }
+    .nav a button {
+      cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
