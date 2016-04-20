@@ -9,7 +9,7 @@
     padding: 0 $gutter-width;
 
     .nav__logo {
-
+        margin-left: $nav-padding-horizontal*-1;
     }
 
     .nav__menu {
@@ -24,10 +24,17 @@
     a {
         display: inline-block;
         padding: $nav-padding;
+        vertical-align: middle;
 
         button {
             cursor: pointer;
         }
+
+    }
+
+    a .fa {
+        font-size: $base-font-size * 1.6;
+        line-height: $base-line-height * 2;
     }
 
 }

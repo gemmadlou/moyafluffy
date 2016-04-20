@@ -235,8 +235,15 @@ textarea {
 /*---------
   Variables
 ---------*/
+/** Breakpoints **/
+/** Font **/
+/** Font Headings **/
+/** Colors **/
 /** Links **/
 /** Nav **/
+/** Full Nav **/
+/** Grid **/
+/** Button **/
 body, html {
   font-family: "Poppins", sans-serif;
   color: #251F1A; }
@@ -322,6 +329,10 @@ a {
 .fill-minor {
   background-color: #F7EDF9; }
 
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important; } }
+
 hr {
   margin-bottom: 1.6rem;
   margin-bottom: calc(1.6rem - 1px);
@@ -341,13 +352,49 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 0 1.6rem; }
+  .nav .nav__logo {
+    margin-left: -1.6rem; }
   .nav .nav__menu-item {
     display: inline;
     margin-left: 1.6rem; }
   .nav a {
     display: inline-block;
-    padding: 5px 10px; }
+    padding: 0.8rem 1.6rem;
+    vertical-align: middle; }
     .nav a button {
       cursor: pointer; }
+  .nav a .fa {
+    font-size: 1.6rem;
+    line-height: 1.6rem; }
+
+.full-nav {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .full-nav .full-nav__item .full-nav__item-link {
+    display: block;
+    padding: 1.6rem 0;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-transform: uppercase; }
+    @media screen and (min-width: 768px) {
+      .full-nav .full-nav__item .full-nav__item-link {
+        font-size: 1.6rem;
+        line-height: 2.4rem; } }
+
+.container {
+  max-width: 1080px;
+  margin: 0 1.6rem; }
+  @media (min-width: 768px) {
+    .container {
+      margin: 0 auto; } }
+
+button.btn.btn-primary {
+  background-color: #FB275A;
+  padding: 0.8rem 1.6rem;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */

@@ -17,3 +17,9 @@
 .fill-minor {
     background-color: $color-minor;
 }
+
+.hidden-mobile {
+    @media (max-width: $breakpoint-mobile-max) {
+        display: none !important;
+    }
+}

@@ -1,0 +1,7 @@
+button.btn {
+    &.btn-primary {
+        background-color: $color-attention;
+        padding: $button-padding;
+        color: white;
+    }
+}

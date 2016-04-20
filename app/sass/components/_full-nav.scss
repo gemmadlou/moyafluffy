@@ -1,0 +1,20 @@
+.full-nav {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .full-nav__item .full-nav__item-link {
+        display: block;
+        padding: $full-nav-padding;
+        @include h3;
+        text-transform: uppercase;
+    }
+
+    .full-nav__item .full-nav__item-close {
+        
+    }
+
+}
