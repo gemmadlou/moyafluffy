@@ -6,18 +6,23 @@ var app = {};
         }
     })];
 
-function ToggleDropdown() {
+function OpenDropdown(id) {
     var data = app.history[app.historyIndex].get('dropdown');
+    var elem = document.getElementById(id);
+    var openClass = 'slider-open';
 
-    if (data.open === false) {
-        DropdownOpened();
-    } else {
-        DropdownClosed();
-    }
-
+    elem.classList.add(openClass);
+    DropdownOpened();
     app.historyIndex++;
+}
 
-    console.log(app);
+function CloseDropdown(id) {
+    var data = app.history[app.historyIndex].get('dropdown');
+    var elem = document.getElementById(id);
+    var openClass = 'slider-open';
+
+    elem.classList.remove(openClass);
+    DropdownClosed();
 }
 
 function DropdownOpened() {

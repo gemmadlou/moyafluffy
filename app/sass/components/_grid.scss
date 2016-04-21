@@ -2,7 +2,8 @@
     max-width: $container-max-width;
     margin: 0 $gutter-width;
 
-    @media (min-width: $breakpoint-portrait-tablet-min) {
+    @media (min-width: ($breakpoint-desktop-min+($gutter-width*2))) {
         margin: 0 auto;
     }
+    
 }

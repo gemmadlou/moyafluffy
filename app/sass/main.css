@@ -239,6 +239,7 @@ textarea {
 /** Font **/
 /** Font Headings **/
 /** Colors **/
+/** Color Hues **/
 /** Links **/
 /** Nav **/
 /** Full Nav **/
@@ -269,7 +270,7 @@ p {
 h1 {
   font-size: 1.8rem;
   line-height: 2.4rem; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 40rem) {
     h1 {
       font-size: 2.6rem;
       line-height: 3.2rem; } }
@@ -277,7 +278,7 @@ h1 {
 h2 {
   font-size: 1.6rem;
   line-height: 2.4rem; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 40rem) {
     h2 {
       font-size: 2rem;
       line-height: 2.4rem; } }
@@ -285,7 +286,7 @@ h2 {
 h3 {
   font-size: 1.4rem;
   line-height: 1.6rem; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 40rem) {
     h3 {
       font-size: 1.6rem;
       line-height: 2.4rem; } }
@@ -305,7 +306,7 @@ h6 {
 p {
   font-size: 0.8rem;
   line-height: 1.6rem; }
-  @media screen and (min-width: 383.5px) {
+  @media screen and (min-width: 28rem) {
     p {
       font-size: 1rem; } }
 
@@ -329,7 +330,7 @@ a {
 .fill-minor {
   background-color: #F7EDF9; }
 
-@media (max-width: 767px) {
+@media (max-width: 39.99rem) {
   .hidden-mobile {
     display: none !important; } }
 
@@ -374,27 +375,57 @@ hr {
   left: 0;
   right: 0;
   bottom: 0; }
+  @media (max-height: 45rem) {
+    .full-nav {
+      overflow-y: auto !important; } }
   .full-nav .full-nav__item .full-nav__item-link {
     display: block;
     padding: 1.6rem 0;
     font-size: 1.4rem;
     line-height: 1.6rem;
     text-transform: uppercase; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 40rem) {
       .full-nav .full-nav__item .full-nav__item-link {
         font-size: 1.6rem;
         line-height: 2.4rem; } }
 
 .container {
-  max-width: 1080px;
+  max-width: 80rem;
   margin: 0 1.6rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 83.2rem) {
     .container {
       margin: 0 auto; } }
 
+button,
+.btn {
+  padding: 0.8rem 1.6rem; }
+
+button.btn.btn-default {
+  background-color: #F7EDF9; }
 button.btn.btn-primary {
   background-color: #FB275A;
-  padding: 0.8rem 1.6rem;
   color: white; }
+  button.btn.btn-primary:hover {
+    background-color: #F77090; }
+
+.slider {
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+.slider.slider-animate-down {
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  height: 0;
+  overflow-y: hidden; }
+
+.slider.slider-animate-down.slider-open {
+  height: 100%; }
+
+body {
+  min-height: 80rem; }
 
 /*# sourceMappingURL=main.css.map */

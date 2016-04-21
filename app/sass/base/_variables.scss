@@ -8,9 +8,11 @@ $base-font-size: 1rem;
 $base-bottom-margin: $base-line-height * 2;
 
 /** Breakpoints **/
-$breakpoint-mobile-max: 767px;
-$breakpont-mobile-mid: $breakpoint-mobile-max / 2;
-$breakpoint-portrait-tablet-min: 768px;
+$breakpont-mobile-mid: 28rem;
+$breakpoint-mobile-max: 39.99rem;
+$breakpoint-portrait-tablet-min: 40rem;
+$breakpoint-landscape-tablet-min: 70rem;
+$breakpoint-desktop-min: 80rem;
 
 /** Font **/
 $base-font: 'Poppins', sans-serif;
@@ -70,6 +72,9 @@ $color-tertiary: #927662;
 $color-attention: #FB275A;
 $color-minor: #F7EDF9;
 
+/** Color Hues **/
+$color-attention-light: #FF4874;
+
 /** Links **/
 $link-color: $color-attention;
 $link-hover: #F77090;
@@ -83,7 +88,14 @@ $nav-padding: $nav-padding-vertical $nav-padding-horizontal;
 $full-nav-padding: ($base-line-height * 2) 0;
 
 /** Grid **/
-$container-max-width: 1080px;
+$container-max-width: 80rem;
 
 /** Button **/
 $button-padding: $base-line-height $gutter-width;
+
+$button-primary-color: $color-attention;
+$button-primary-hover-color: $link-hover;
+$button-primary-text-color: white;
+
+$button-default-color: $color-minor;
+$button-default-hover-color: $color-minor;

@@ -1,7 +1,19 @@
+button,
+.btn {
+    padding: $button-padding;
+}
+
 button.btn {
+    &.btn-default {
+        background-color: $button-default-color;
+    }
+
     &.btn-primary {
-        background-color: $color-attention;
-        padding: $button-padding;
-        color: white;
+        background-color: $button-primary-color;
+        color: $button-primary-text-color;
+
+        &:hover {
+            background-color: $button-primary-hover-color;
+        }
     }
 }

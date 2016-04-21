@@ -6,6 +6,10 @@
     right: 0;
     bottom: 0;
 
+    @media (max-height: 45rem) {
+        overflow-y: auto !important;
+    }
+
     .full-nav__item .full-nav__item-link {
         display: block;
         padding: $full-nav-padding;
@@ -14,7 +18,7 @@
     }
 
     .full-nav__item .full-nav__item-close {
-        
+
     }
 
 }

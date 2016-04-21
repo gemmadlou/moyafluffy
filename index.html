@@ -11,6 +11,7 @@
     <script src="app/react/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/3.8.1/immutable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
     <script src="app/js/script.js"></script>
   </head>
   <body>
@@ -22,25 +23,34 @@
               <div class="nav__menu">
                   <ul class="">
                       <li class="nav__menu-item hidden-mobile"><a href=""><button class="btn btn-primary">Adopt Moya + Fluffy</button></a></li>
-                      <li class="nav__menu-item" onclick="ToggleDropdown(); return false"><a href=""><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+                      <li class="nav__menu-item" onclick="OpenDropdown('app-dropdown'); return false"><a href=""><i class="fa fa-bars" aria-hidden="true"></i></a></li>
                   </ul>
               </div>
           </nav>
       </header>
-      <section id="app-dropdown" style="display: none;">
-          <div class="full-nav">
+      <section class="">
+          <div id="app-dropdown" class="full-nav slider slider-animate-down">
               <div class="container">
                   <div class="full-nav__item">
-                      <a href="" class="full-nav__item-link full-nav__item-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                      <a href="" onclick="CloseDropdown('app-dropdown'); return false;" class="full-nav__item-link full-nav__item-close"><i class="fa fa-times" aria-hidden="true"></i></a>
                   </div>
                   <div class="full-nav__item">
-                      <a href="" class="full-nav__item-link">Home</a>
+                      <a href="#meet" class="full-nav__item-link">Meet Moya + Fluffy</a>
                   </div>
                   <div class="full-nav__item">
-                      <a href="" class="full-nav__item-link">Moya + Fluffy</a>
+                      <a href="#playtime" class="full-nav__item-link">Playtime</a>
                   </div>
                   <div class="full-nav__item">
-                      <a href="" class="full-nav__item-link">Diet</a>
+                      <a href="#food" class="full-nav__item-link">Food</a>
+                  </div>
+                  <div class="full-nav__item">
+                      <a href="#chillout" class="full-nav__item-link">Chillout</a>
+                  </div>
+                  <div class="full-nav__item">
+                      <a href="#special-care" class="full-nav__item-link">Special Care</a>
+                  </div>
+                  <div class="full-nav__item">
+                      <a href="#why-rehoming" class="full-nav__item-link">Why Rehoming?</a>
                   </div>
               </div>
           </div>
