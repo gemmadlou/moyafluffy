@@ -3,3 +3,15 @@ hr {
     margin-bottom: calc(#{$base-bottom-margin} - 1px);
     border-bottom-width: 1px;
 }
+
+section,
+header,
+footer {
+    display: block;
+    position: relative;
+}
+
+div {
+    box-sizing: border-box;
+    position: relative;
+}

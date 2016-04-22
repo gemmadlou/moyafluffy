@@ -15,8 +15,8 @@
     <script src="app/js/script.js"></script>
   </head>
   <body>
-      <header>
-          <nav class="nav">
+      <header class="border-bottom-default">
+          <nav class="nav container">
               <div class="nav__logo">
                   <a href=""><img src="app/img/logo.png" width="80"></a>
               </div>
@@ -28,7 +28,7 @@
               </div>
           </nav>
       </header>
-      <section class="">
+      <section class="dropdown-section">
           <div id="app-dropdown" class="full-nav slider slider-animate-down">
               <div class="container">
                   <div class="full-nav__item">
@@ -55,11 +55,85 @@
               </div>
           </div>
       </section>
+    <section id="meet" class="bg-image" style=" background-image: url(https://images.unsplash.com/photo-1453535397344-2db6bf80862a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4a4ea8a36c38ad247a27725d422c206e);">
+        <div class="sheen"></div>
+        <div class="container">
+            <div class="canvas canvas--centered-content" style="min-height: 500px;">
+                <div class="canvas__play-button canvas__play-button-primary" onclick="ShowLightBox('video-cats');">
+                    <i class="fa fa-play-circle" aria-hidden="true"></i> Meet Moya + Fluffy
+                    <br/><small>2 little mischievious cats from Woolwich</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="video" class="lightbox-wrapper">
+        <div id="video-cats" class="lightbox lightbox--hidden" onclick="HideLightBox(this)">
+            <div class="sheen sheen-dark"></div>
+            <div class="lightbox__video-wrapper">
+                <div class="lightbox__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OwoQfYiwJwU" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="why-rehome">
+        <div class="container vertical-padding-top vertical-padding-bottom">
+            <div class="row vertical-padding-bottom">
+                <div class="col">
+                    <h2>Why Rehome Them?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col--one-quarter-desktop col--one-half-tablet element">
+                    <img src="http://placehold.it/400x400" style="width: 100%; height: auto;"/>
+                </div>
+                <div class="col col--one-quarter-desktop col--one-half-tablet element flex-center-content">
+                    <h3><i class="fa fa-paw" aria-hidden="true"></i> We Love Them</h3>
+                    <p>Quisque laoreet, sem a dictum tempus, purus orci blandit dolor, sed dictum sem ante pharetra risus. Sed aliquam sagittis odio, ut condimentum augue convallis in.</p>
+                </div>
+                <div class="col col--one-quarter-desktop col--one-half-tablet element">
+                    <img src="http://placehold.it/400x400" style="width: 100%; height: auto;"/>
+                </div>
+                <div class="col col--one-quarter-desktop col--one-half-tablet element flex-center-content">
+                    <h3><i class="fa fa-paw" aria-hidden="true"></i> Nomadic Future</h3>
+                    <p>Quisque laoreet, sem a dictum tempus, purus orci blandit dolor, sed dictum sem ante pharetra risus. Sed aliquam sagittis odio, ut condimentum augue convallis in.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col--one-quarter-desktop col--one-half-tablet element flex-center-content">
+                    <h3><i class="fa fa-paw" aria-hidden="true"></i> Staying Together</h3>
+                    <p>Quisque laoreet, sem a dictum tempus, purus orci blandit dolor, sed dictum sem ante pharetra risus. Sed aliquam sagittis odio, ut condimentum augue convallis in.</p>
+                </div>
+                <div class="col col--one-quarter-desktop col--one-half-tablet element">
+                    <img src="http://placehold.it/400x400" style="width: 100%; height: auto;"/>
+                </div>
+                <div class="col col--one-quarter-desktop col--one-half-tablet element flex-center-content">
+                    <h3><i class="fa fa-paw" aria-hidden="true"></i> The Great Outdoors</h3>
+                    <p>Quisque laoreet, sem a dictum tempus, purus orci blandit dolor, sed dictum sem ante pharetra risus. Sed aliquam sagittis odio, ut condimentum augue convallis in.</p>
+                </div>
+                <div class="col col--one-quarter-desktop col--one-half-tablet element">
+                    <img src="http://placehold.it/400x400" style="width: 100%; height: auto;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav class="nav container">
+            <div class="nav__menu">
+                <ul class="">
+                    <li class="nav__menu-item hidden-mobile"><a href=""><button class="btn btn-primary">Adopt Moya + Fluffy</button></a></li>
+                    <li class="nav__menu-item"><a href="">Privacy Policy</a></li>
+                    <li class="nav__menu-item"><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+      <!--
       <section>
           <div class="container">
               <div id="example"></div>
           </div>
-      </section>
+      </section>-->
     <script type="text/babel">
       ReactDOM.render(
         <h1>Hello, world!</h1>,

@@ -1,0 +1,26 @@
+.canvas {
+
+    display: flex;
+
+    &.canvas--centered-content {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .canvas__play-button {
+
+        @include h1;
+        cursor: pointer;
+        font-family: $headline-font;
+
+    }
+
+    .canvas__play-button.canvas__play-button-primary {
+        color: $color-primary;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+
+}

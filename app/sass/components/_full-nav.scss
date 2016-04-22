@@ -6,15 +6,17 @@
     right: 0;
     bottom: 0;
 
-    @media (max-height: 45rem) {
+    @media (max-height: 35rem) {
         overflow-y: auto !important;
     }
 
     .full-nav__item .full-nav__item-link {
+        font-family: $headline-font;
         display: block;
         padding: $full-nav-padding;
         @include h3;
-        text-transform: uppercase;
+        text-transform: capitalize;
+        font-weight: $headline-font-weight;
     }
 
     .full-nav__item .full-nav__item-close {

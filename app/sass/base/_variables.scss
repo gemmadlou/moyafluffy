@@ -8,16 +8,24 @@ $base-font-size: 1rem;
 $base-bottom-margin: $base-line-height * 2;
 
 /** Breakpoints **/
-$breakpont-mobile-mid: 28rem;
-$breakpoint-mobile-max: 39.99rem;
-$breakpoint-portrait-tablet-min: 40rem;
-$breakpoint-landscape-tablet-min: 70rem;
-$breakpoint-desktop-min: 80rem;
+$breakpont-mobile-mid: 15rem;
+$breakpoint-mobile-max: 34.9rem;
+$breakpoint-portrait-tablet-min: 35rem;
+$breakpoint-landscape-tablet-min: 60rem;
+$breakpoint-desktop-min: 67rem;
+
+$breakpoint-mobile: 35rem;
+$breakpoint-tablet: $breakpoint-portrait-tablet-min;
+$breakpoint-desktop: $breakpoint-desktop-min;
+$breakpoint-bigscreen: 100rem;
 
 /** Font **/
 $base-font: 'Poppins', sans-serif;
 $headline-font: 'Life Savers', cursive;
-$headline-font-weight: 400;
+$headline-font-weight: 600;
+
+/** Box Shadow **/
+$box-shadow: 0 0px 0px 5px rgba(247, 237, 249, 0.65);
 
 /** Font Headings **/
 @mixin h1 {
@@ -66,7 +74,7 @@ $headline-font-weight: 400;
 }
 
 /** Colors **/
-$color-primary: #F5A46A;
+$color-primary: #ffffff;
 $color-secondary: #251F1A;
 $color-tertiary: #927662;
 $color-attention: #FB275A;
@@ -83,12 +91,14 @@ $link-hover: #F77090;
 $nav-padding-vertical: $base-line-height;
 $nav-padding-horizontal: $gutter-width;
 $nav-padding: $nav-padding-vertical $nav-padding-horizontal;
+$nav-box-shadow: $box-shadow; // $color-minor @.65
 
 /** Full Nav **/
 $full-nav-padding: ($base-line-height * 2) 0;
 
 /** Grid **/
-$container-max-width: 80rem;
+$vertical-spacing: $gutter-width;
+$container-max-width: $breakpoint-desktop;
 
 /** Button **/
 $button-padding: $base-line-height $gutter-width;

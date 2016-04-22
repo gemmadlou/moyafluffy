@@ -41,4 +41,27 @@ function DropdownClosed() {
     }));
 }
 
+function HideLightBox(element) {
+
+    var hideClass = 'lightbox--hidden';
+    element.classList.add(hideClass);
+    LightBoxHidden();
+
+}
+
+function LightBoxHidden() {
+
+}
+
+function ShowLightBox(id) {
+    var hideClass = 'lightbox--hidden';
+    var element = document.getElementById(id);
+    element.classList.remove(hideClass);
+    LightBoxShown();
+}
+
+function LightBoxShown() {
+
+}
+
 console.log(app);

@@ -1,3 +1,17 @@
 body {
-    min-height: 80rem;
+    min-height: 50rem;
+}
+
+header {
+    z-index: 10;
+}
+
+.dropdown-section {
+    z-index: 50;
+}
+
+footer {
+    .nav__menu-item:first-child {
+        margin-left: (-1*$gutter-width);
+    }
 }

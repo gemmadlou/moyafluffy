@@ -23,3 +23,31 @@
         display: none !important;
     }
 }
+
+.bg-image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.border-bottom-default {
+    box-shadow: $nav-box-shadow;
+}
+
+.vertical-padding-top {
+    padding-top: $vertical-spacing;
+}
+
+.vertical-padding-bottom {
+    padding-bottom: $vertical-spacing;
+}
+
+.flex-center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}

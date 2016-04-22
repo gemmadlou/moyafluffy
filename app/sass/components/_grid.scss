@@ -5,5 +5,36 @@
     @media (min-width: ($breakpoint-desktop-min+($gutter-width*2))) {
         margin: 0 auto;
     }
-    
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.row--contain {
+        flex-wrap: nowrap;
+    }
+}
+
+.col {
+
+    width: 100%;
+    padding: 0 $gutter-width;
+
+    &.col--one-half-tablet {
+        @media (min-width: $breakpoint-tablet) {
+            width: 50%;
+        }
+    }
+
+    &.col--one-quarter-desktop {
+        @media (min-width: $breakpoint-desktop) {
+            width: 25%;
+        }
+    }
+}
+
+.element {
+    padding-bottom: $vertical-spacing;
 }
