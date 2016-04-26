@@ -35,7 +35,7 @@
 }
 
 .vertical-padding-top {
-    padding-top: $vertical-spacing;
+    padding-top: ($vertical-spacing*2);
 }
 
 .vertical-padding-bottom {
@@ -50,4 +50,9 @@
 
 .text-center {
     text-align: center;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
 }

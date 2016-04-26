@@ -20,18 +20,55 @@
 .col {
 
     width: 100%;
-    padding: 0 $gutter-width;
+    padding-right: ($gutter-width/2);
+    padding-left: ($gutter-width/2);
+
+    &.col--single-mobile {
+        width: 100%;
+    }
 
     &.col--one-half-tablet {
-        @media (min-width: $breakpoint-tablet) {
+        @media (min-width: $breakpoint-mobile) {
             width: 50%;
         }
     }
 
+    &.col--one-third-tablet {
+        @media (min-width: $breakpoint-mobile) {
+            width: (100%/3);
+        }
+    }
+
+    &.col--two-thirds-tablet {
+        @media (min-width: $breakpoint-mobile) {
+            width: (100%/3*2);
+        }
+    }
+
     &.col--one-quarter-desktop {
-        @media (min-width: $breakpoint-desktop) {
+        @media (min-width: $breakpoint-tablet) {
             width: 25%;
         }
+    }
+
+    &.col--one-fifth,
+    &.col--one-fifth-tablet {
+        @media (min-width: $breakpoint-mobile) {
+            width: 20%;
+        }
+    }
+
+    &.no-gutter {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    &.col--push-one-quarter {
+        margin-left: 25%;
+    }
+
+    &.col--push-one-half {
+        margin-left: 50%;
     }
 }
 

@@ -11,11 +11,11 @@ $base-bottom-margin: $base-line-height * 2;
 $breakpont-mobile-mid: 15rem;
 $breakpoint-mobile-max: 34.9rem;
 $breakpoint-portrait-tablet-min: 35rem;
-$breakpoint-landscape-tablet-min: 60rem;
+$breakpoint-landscape-tablet-min:50rem;
 $breakpoint-desktop-min: 67rem;
 
 $breakpoint-mobile: 35rem;
-$breakpoint-tablet: $breakpoint-portrait-tablet-min;
+$breakpoint-tablet: $breakpoint-landscape-tablet-min;
 $breakpoint-desktop: $breakpoint-desktop-min;
 $breakpoint-bigscreen: 100rem;
 
@@ -29,37 +29,37 @@ $box-shadow: 0 0px 0px 5px rgba(247, 237, 249, 0.65);
 
 /** Font Headings **/
 @mixin h1 {
-    font-size: $base-font-size * 1.8;
+    font-size: $base-font-size * 1.85;
     line-height: $base-line-height * 3;
 
-    @media screen and (min-width: $breakpoint-portrait-tablet-min) {
+    @media screen and (min-width: $breakpoint-mobile) {
+        font-size: $base-font-size * 3.8;
+        line-height: $base-line-height * 5;
+    }
+}
+
+@mixin h2 {
+    font-size: $base-font-size * 1.65;
+    line-height: $base-line-height * 3;
+
+    @media screen and (min-width: $breakpoint-mobile) {
         font-size: $base-font-size * 2.6;
         line-height: $base-line-height * 4;
     }
 }
 
-@mixin h2 {
-    font-size: $base-font-size * 1.6;
-    line-height: $base-line-height * 3;
-
-    @media screen and (min-width: $breakpoint-portrait-tablet-min) {
-        font-size: $base-font-size * 2;
-        line-height: $base-line-height * 3
-    }
-}
-
 @mixin h3 {
-    font-size: $base-font-size * 1.4;
+    font-size: $base-font-size * 1.5;
     line-height: $base-line-height * 2;
 
-    @media screen and (min-width: $breakpoint-portrait-tablet-min) {
-        font-size: $base-font-size * 1.6;
-        line-height: $base-line-height * 3
+    @media screen and (min-width: $breakpoint-mobile) {
+        font-size: $base-font-size * 2.0;
+        line-height: $base-line-height * 3;
     }
 }
 
 @mixin h4 {
-    font-size: $base-font-size * 1.2;
+    font-size: $base-font-size * 1.4;
     line-height: $base-line-height * 2;
 }
 
@@ -89,7 +89,7 @@ $link-hover: #F77090;
 
 /** Nav **/
 $nav-padding-vertical: $base-line-height;
-$nav-padding-horizontal: $gutter-width;
+$nav-padding-horizontal: ($gutter-width/2);
 $nav-padding: $nav-padding-vertical $nav-padding-horizontal;
 $nav-box-shadow: $box-shadow; // $color-minor @.65
 

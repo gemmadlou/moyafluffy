@@ -269,31 +269,31 @@ p {
   margin-bottom: 1.6rem; }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.85rem;
   line-height: 2.4rem; }
   @media screen and (min-width: 35rem) {
     h1 {
-      font-size: 2.6rem;
-      line-height: 3.2rem; } }
+      font-size: 3.8rem;
+      line-height: 4rem; } }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.65rem;
   line-height: 2.4rem; }
   @media screen and (min-width: 35rem) {
     h2 {
-      font-size: 2rem;
-      line-height: 2.4rem; } }
+      font-size: 2.6rem;
+      line-height: 3.2rem; } }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.6rem; }
   @media screen and (min-width: 35rem) {
     h3 {
-      font-size: 1.6rem;
+      font-size: 2rem;
       line-height: 2.4rem; } }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.6rem; }
 
 h5 {
@@ -344,7 +344,7 @@ a {
   box-shadow: 0 0px 0px 5px rgba(247, 237, 249, 0.65); }
 
 .vertical-padding-top {
-  padding-top: 1.6rem; }
+  padding-top: 3.2rem; }
 
 .vertical-padding-bottom {
   padding-bottom: 1.6rem; }
@@ -356,6 +356,10 @@ a {
 
 .text-center {
   text-align: center; }
+
+.full-width-image {
+  width: 100%;
+  height: auto; }
 
 hr {
   margin-bottom: 1.6rem;
@@ -386,14 +390,16 @@ div {
   justify-content: space-between;
   align-items: center;
   padding: 0 1.6rem; }
+  .nav ul {
+    margin-left: 0; }
   .nav .nav__logo {
-    margin-left: -1.6rem; }
+    margin-left: -0.8rem; }
   .nav .nav__menu-item {
     display: inline;
     margin-left: 1.6rem; }
   .nav a {
     display: inline-block;
-    padding: 0.8rem 1.6rem;
+    padding: 0.8rem 0.8rem;
     vertical-align: middle; }
     .nav a button {
       cursor: pointer; }
@@ -415,13 +421,13 @@ div {
     font-family: "Life Savers", cursive;
     display: block;
     padding: 1.6rem 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.6rem;
     text-transform: capitalize;
     font-weight: 600; }
     @media screen and (min-width: 35rem) {
       .full-nav .full-nav__item .full-nav__item-link {
-        font-size: 1.6rem;
+        font-size: 2rem;
         line-height: 2.4rem; } }
 
 .container {
@@ -439,13 +445,32 @@ div {
 
 .col {
   width: 100%;
-  padding: 0 1.6rem; }
+  padding-right: 0.8rem;
+  padding-left: 0.8rem; }
+  .col.col--single-mobile {
+    width: 100%; }
   @media (min-width: 35rem) {
     .col.col--one-half-tablet {
       width: 50%; } }
-  @media (min-width: 67rem) {
+  @media (min-width: 35rem) {
+    .col.col--one-third-tablet {
+      width: 33.33333%; } }
+  @media (min-width: 35rem) {
+    .col.col--two-thirds-tablet {
+      width: 66.66667%; } }
+  @media (min-width: 50rem) {
     .col.col--one-quarter-desktop {
       width: 25%; } }
+  @media (min-width: 35rem) {
+    .col.col--one-fifth, .col.col--one-fifth-tablet {
+      width: 20%; } }
+  .col.no-gutter {
+    padding-right: 0;
+    padding-left: 0; }
+  .col.col--push-one-quarter {
+    margin-left: 25%; }
+  .col.col--push-one-half {
+    margin-left: 50%; }
 
 .element {
   padding-bottom: 1.6rem; }
@@ -468,14 +493,14 @@ button.btn.btn-primary {
     align-items: center;
     justify-content: center; }
   .canvas .canvas__play-button {
-    font-size: 1.8rem;
+    font-size: 1.85rem;
     line-height: 2.4rem;
     cursor: pointer;
     font-family: "Life Savers", cursive; }
     @media screen and (min-width: 35rem) {
       .canvas .canvas__play-button {
-        font-size: 2.6rem;
-        line-height: 3.2rem; } }
+        font-size: 3.8rem;
+        line-height: 4rem; } }
   .canvas .canvas__play-button.canvas__play-button-primary {
     color: #ffffff; }
     .canvas .canvas__play-button.canvas__play-button-primary:hover {
@@ -505,7 +530,7 @@ button.btn.btn-primary {
   align-items: center; }
   .lightbox .lightbox__video-wrapper {
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto; }
     @media (min-width: 35rem) {
       .lightbox .lightbox__video-wrapper {
@@ -556,5 +581,8 @@ header {
 
 footer .nav__menu-item:first-child {
   margin-left: -1.6rem; }
+
+ul {
+  margin-left: 1.6rem; }
 
 /*# sourceMappingURL=main.css.map */
