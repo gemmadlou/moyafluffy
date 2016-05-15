@@ -45,9 +45,27 @@
         }
     }
 
+    &.col--one-quarter-tablet {
+        @media (min-width: $breakpoint-mobile) {
+            width: 25%;
+        }
+    }
+
     &.col--one-quarter-desktop {
         @media (min-width: $breakpoint-tablet) {
             width: 25%;
+        }
+    }
+
+    &.col--three-quarter-tablet {
+        @media (min-width: $breakpoint-mobile) {
+            width: 75%;
+        }
+    }
+
+    &.col--three-quarter-desktop {
+        @media (min-width: $breakpoint-tablet) {
+            width: 75%;
         }
     }
 

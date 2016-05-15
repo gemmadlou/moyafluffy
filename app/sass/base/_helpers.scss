@@ -19,8 +19,20 @@
 }
 
 .hidden-mobile {
-    @media (max-width: $breakpoint-mobile-max) {
+    @media (max-width: $breakpoint-mobile) {
         display: none !important;
+    }
+}
+
+.visible-tablet {
+    @media (min-width: $breakpoint-mobile) {
+        display: inherit !important;
+    }
+}
+
+.visible-desktop {
+    @media (min-width: $breakpoint-tablet) {
+        display: inherit !important;
     }
 }
 

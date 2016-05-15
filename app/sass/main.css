@@ -331,9 +331,17 @@ a {
 .fill-minor {
   background-color: #F7EDF9; }
 
-@media (max-width: 34.9rem) {
+@media (max-width: 35rem) {
   .hidden-mobile {
     display: none !important; } }
+
+@media (min-width: 35rem) {
+  .visible-tablet {
+    display: inherit !important; } }
+
+@media (min-width: 50rem) {
+  .visible-desktop {
+    display: inherit !important; } }
 
 .bg-image {
   background-size: cover;
@@ -458,9 +466,18 @@ div {
   @media (min-width: 35rem) {
     .col.col--two-thirds-tablet {
       width: 66.66667%; } }
+  @media (min-width: 35rem) {
+    .col.col--one-quarter-tablet {
+      width: 25%; } }
   @media (min-width: 50rem) {
     .col.col--one-quarter-desktop {
       width: 25%; } }
+  @media (min-width: 35rem) {
+    .col.col--three-quarter-tablet {
+      width: 75%; } }
+  @media (min-width: 50rem) {
+    .col.col--three-quarter-desktop {
+      width: 75%; } }
   @media (min-width: 35rem) {
     .col.col--one-fifth, .col.col--one-fifth-tablet {
       width: 20%; } }
@@ -517,7 +534,7 @@ button.btn.btn-primary {
 
 .sheen.sheen-dark {
   background-color: black;
-  opacity: 0.95; }
+  opacity: 0.75; }
 
 .lightbox {
   position: fixed;
@@ -530,7 +547,7 @@ button.btn.btn-primary {
   align-items: center; }
   .lightbox .lightbox__video-wrapper {
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto; }
     @media (min-width: 35rem) {
       .lightbox .lightbox__video-wrapper {
@@ -539,7 +556,7 @@ button.btn.btn-primary {
     height: 0;
     width: 100%;
     padding-bottom: 56.25%;
-    box-shadow: 0 0 0px 3px rgba(255, 255, 255, 0.14); }
+    box-shadow: 0 0 16px 3px black; }
     .lightbox .lightbox__video iframe {
       position: absolute;
       top: 0;

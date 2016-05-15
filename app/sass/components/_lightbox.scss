@@ -10,7 +10,7 @@
 
     .lightbox__video-wrapper {
         width: 100%;
-        max-width: 1200px;
+        max-width: 800px;
         margin: 0 auto;
         @media (min-width: $breakpoint-portrait-tablet-min) {
             padding: $gutter-width * 2;
@@ -21,7 +21,7 @@
         height: 0;
         width: 100%;
         padding-bottom: 56.25%;
-        box-shadow: 0 0 0px 3px rgba(255, 255, 255, 0.14);
+        box-shadow: 0 0 16px 3px black;
 
         iframe {
             position: absolute;
