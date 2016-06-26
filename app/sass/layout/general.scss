@@ -4,6 +4,10 @@ body {
 
 header {
     z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
 }
 
 .dropdown-section {
@@ -18,4 +22,22 @@ footer {
 
 ul {
     margin-left: $gutter-width;
+}
+
+.bottom-page-border {
+    position: fixed;
+    width: 100%;
+    height: 5px;
+    background-color: $color-attention;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+section:before:not(#meet) {
+  position: relative;
+  display: block;
+  content: " ";
+  height: 35px;
+  visibility: hidden;
 }

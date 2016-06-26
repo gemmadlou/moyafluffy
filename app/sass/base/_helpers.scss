@@ -46,6 +46,10 @@
     box-shadow: $nav-box-shadow;
 }
 
+.border-white {
+    border: 5px solid white;
+}
+
 .vertical-padding-top {
     padding-top: ($vertical-spacing*2);
 }
@@ -67,4 +71,40 @@
 .full-width-image {
     width: 100%;
     height: auto;
+}
+
+.nav-padding {
+    position: relative;
+    display: block;
+    margin-top: 54px;
+    width: 100%;
+
+    @media only screen and (min-width: $breakpoint-mobile) {
+        margin-top: 76px;
+    }
+}
+
+.font-white {
+    color: white;
+}
+
+.font-attention {
+    color: $color-attention;
+}
+
+.circular-image {
+    border-radius: 100%;
+}
+
+img.grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
 }

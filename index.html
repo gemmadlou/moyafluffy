@@ -8,8 +8,8 @@
     <link href="app/sass/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/3.8.1/immutable.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js">
-    <script src="app/js/vendors/rem.min.js"></script></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+    <script src="app/js/vendors/rem.min.js"></script>
     <script src="app/js/vendors/flex.js"></script>
     <script src="app/js/script.js"></script>
   </head>
@@ -17,7 +17,7 @@
       <header class="border-bottom-default">
           <nav class="nav container">
               <div class="nav__logo">
-                  <a href=""><img src="app/img/logo.png" width="80"></a>
+                  <a href="">M + F</a>
               </div>
               <div class="nav__menu">
                   <ul class="">
@@ -34,33 +34,36 @@
                       <a href="" onclick="CloseDropdown('app-dropdown'); return false;" class="full-nav__item-link full-nav__item-close"><i class="fa fa-times" aria-hidden="true"></i></a>
                   </div>
                   <div class="full-nav__item">
-                      <a href="#meet" class="full-nav__item-link">Adoption</a>
+                      <a href="#introduction" class="full-nav__item-link" onclick="CloseDropdown('app-dropdown');">Introduction</a>
                   </div>
                   <div class="full-nav__item">
-                      <a href="#playtime" class="full-nav__item-link">Playtime</a>
+                      <a href="#food" class="full-nav__item-link" onclick="CloseDropdown('app-dropdown');">Food</a>
                   </div>
                   <div class="full-nav__item">
-                      <a href="#food" class="full-nav__item-link">Food</a>
+                      <a href="#chilltime" class="full-nav__item-link" onclick="CloseDropdown('app-dropdown');">Chill time</a>
                   </div>
                   <div class="full-nav__item">
-                      <a href="#chillout" class="full-nav__item-link">Chillout</a>
+                      <a href="#special-care" class="full-nav__item-link" onclick="CloseDropdown('app-dropdown');">Special Care</a>
                   </div>
                   <div class="full-nav__item">
-                      <a href="#special-care" class="full-nav__item-link">Special Care</a>
-                  </div>
-                  <div class="full-nav__item">
-                      <a href="#why-rehoming" class="full-nav__item-link">Why Rehoming?</a>
+                      <a href="#why-rehome" class="full-nav__item-link" onclick="CloseDropdown('app-dropdown');">Why Rehoming?</a>
                   </div>
               </div>
           </div>
       </section>
-    <section id="meet" class="bg-image" style=" background-image: url(./app/content/catala.jpg);">
-        <div class="sheen"></div>
+      <div class="nav-padding"></div>
+    <section id="meet" class="bg-image font-attention" style="">
+        <div class="sheen sheen-pockerdots"></div>
         <div class="container">
             <div class="canvas canvas--centered-content" style="min-height: 500px;">
+                <div>
+                  <img src="app/img/fluffy2.png" width="200">
+                </div>
                 <div class="canvas__play-button canvas__play-button-primary" onclick="ShowLightBox('video-cats');">
                     <i class="fa fa-play-circle" aria-hidden="true"></i> Meet Moya + Fluffy
-                    <br/><small>2 little mischievious cats from Woolwich</small>
+                </div>
+                <div>
+                  <img src="app/img/moya.png" width="200">
                 </div>
             </div>
         </div>
@@ -70,43 +73,38 @@
             <div class="sheen sheen-dark"></div>
             <div class="lightbox__video-wrapper">
                 <div class="lightbox__video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/25OUFtdno8U?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fyq_neDl1IU?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
-    <section id="playtime">
+    <section id="introduction" class="">
         <div class="container">
             <div class="row vertical-padding-top">
-                <div class="col col--two-thirds-tablet">
-                    <h2>Their Playtime</h2>
-                    <p>We've discovered their love of fetch...except - they don't fetch. They chase. And you're the fetcher.</p>
-                    <p>The second game is blind man's bluff. Just hide around the corner, and guess how Moya creeps silently closer and closer
-                    towards you until you peep out.</p>
-                    <p>Oh and of course, she plays piano. And Fluffy loves a good old belly rub. You can tell he's the more chilled of the two.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col--single-mobile col--one-third-tablet vertical-padding-bottom">
-                    <img src="./app/content/moyabath-square.jpg" class="full-width-image" />
-                    <!-- Moya -->
-                </div>
-                <div class="col col--single-mobile col--one-third-tablet vertical-padding-bottom">
-                    <img src="./app/content/fluff-cuddles.jpg" class="full-width-image" />
-                </div>
-                <div class="col col--single-mobile col--one-third-tablet vertical-padding-bottom">
-                    <img src="./app/content/playing-piano-square.jpg" class="full-width-image" />
+                <div class="col">
+                  <p>June 26th, 2016</p>
+                  <p>I'm Gemma, the human to two lovely, part Bengal cats in SE London. The boy is long haired and fluffy, hence his name...the
+                    girl is short haired, named after the spaceship from Farscape, Moya.</p>
+                    <p>We're rehoming the brother and sister. It's been the hardest decision, but as our current circumstances won't allow us,
+                      we want them to be rehomed into a loving family, one where they can go outdoors instead of merely watching the world from our
+                       balcony. We realised it's unfair to them to keep them as house cats.</p>
+                    <p>Moya is incredibly curious and adventurous, so she definitely needs stimulation.
+                      Fluffy is relaxed but loves to be stroked. He will complain if you don't spend some time with him too.</p>
+                    <p>If you are willing to become their new family, contact me <a href="https://docs.google.com/forms/d/1ATpLlG8DU_fxCqqnRsfFfFTdqopS5_oKcjJyeAf9ps0/viewform" target="_blank">here</a> and I'll get in touch.</p>
+                    <p>Gemma x</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="food" class="fill-minor">
+    <section id="food">
+        <div class="sheen sheen-pockerdots"></div>
         <div class="container">
             <div class="row vertical-padding-top">
                 <div class="col col--two-thirds-tablet">
                     <h2>Their Food</h2>
-                    <p>We have certainly discovered that even though they are brother and sister, their pallettes are different. There are things they both like, dislike, but they
-                    do have their differences.</p>
+                    <p>They love food!</p>
+                    <p>They'll wake you up if 8am comes and you're still in bed. Why? Breakfast time, human.
+                    They'll camp out in the kitchen come dinner time. Of course, they'll give you butter-wouldn't-melt eyes.</p>
                 </div>
             </div>
             <div class="row">
@@ -115,25 +113,26 @@
                     <ul>
                         <li>Tin Cat Food - they're pretty impartial, but love fish</li>
                         <li>They love mackarel, cooked salmon and sardines</li>
-                        <li>Cat nip - but it's an unusual like - they go crazy over it</li>
-                        <li>They nibble on biscuits during the day until dinner time</li>
+                        <li>Cat nip - they go crazy over it</li>
+                        <li>They nibble on cat biscuits during the day until dinner time</li>
                         <li>Roast chicken pieces</li>
+                        <li>Olive oil...I don't know why</li>
                     </ul>
                 </div>
                 <div class="col col--single-mobile col--two-thirds-tablet vertical-padding-bottom">
-                    <img src="./app/content/sardines.png" class="full-width-image" />
+                    <img id="img-sardines" src="./app/content/sardines.png" class="full-width-image grayscale" style="max-width: 300px;" />
                 </div>
             </div>
             <div class="row">
-                <div class="col col--single-mobile col--two-thirds-tablet vertical-padding-bottom">
-                    <img src="./app/content/crisp.png" class="full-width-image" />
+                <div class="col col--single-mobile col--two-thirds-tablet vertical-padding-bottom align-right">
+                    <img src="./app/content/crisp.png" class="full-width-image grayscale" style="max-width: 300px;" />
                 </div>
                 <div class="col col--single-mobile col--one-third-tablet vertical-padding-bottom flex-center-content">
                     <h3><i class="fa fa-paw" aria-hidden="true"></i> Fluffy Loves...</h3>
                     <ul>
                         <li>Kettle chips - crisps in general, but loves ready salted or salt and vinegar</li>
                         <li>Peas and carrots, strangely enough</li>
-                        <li>Olive oil...I don't know why</li>
+                        <li>Tortilla chips</p>
                     </ul>
                 </div>
             </div>
@@ -141,17 +140,18 @@
                 <div class="col col--single-mobile col--one-third-tablet vertical-padding-bottom flex-center-content">
                     <h3><i class="fa fa-paw" aria-hidden="true"></i> Moya Loves...</h3>
                     <ul>
-                        <li>Chicken slices</li>
+                        <li>Chicken slices. She really really really loves chicken slices.</li>
                         <li>Cheese - we don't give it often, but she likes a little piece</li>
+                        <li>She TOLERATES dry cat food.</li>
                     </ul>
                 </div>
                 <div class="col col--single-mobile col--two-thirds-tablet vertical-padding-bottom">
-                    <img src="./app/content/gocat.png" class="full-width-image" />
+                    <img src="./app/content/gocat.png" class="full-width-image grayscale" style="max-width: 300px;" />
                 </div>
             </div>
         </div>
     </section>
-    <section id="playtime">
+    <section id="chilltime">
         <div class="container">
             <div class="row vertical-padding-top">
                 <div class="col col--two-thirds-tablet">
@@ -165,23 +165,23 @@
     <section>
         <div class="row">
             <div class="col col--one-fifth-tablet no-gutter">
-                <img src="https://drive.google.com/uc?export=view&id=0Bxl2-swKlj_PVFBZWkVMRjYzT3c" class="full-width-image" />
+                <img src="app/img/moya-2.jpg" class="full-width-image" />
             </div>
             <div class="col col--one-fifth-tablet no-gutter">
-                <img src="https://drive.google.com/uc?export=view&id=0Bxl2-swKlj_PUHdkZndGN2loRWc" class="full-width-image" />
+                <img src="app/img/moya-1.jpg" class="full-width-image" />
             </div>
             <div class="col col--one-fifth-tablet no-gutter">
-                <img src="https://drive.google.com/uc?export=view&id=0Bxl2-swKlj_PWG5NNXNyc2hCNDA" class="full-width-image" />
+                <img src="app/img/fluffy-2.jpg" class="full-width-image" />
             </div>
             <div class="col col--one-fifth-tablet no-gutter">
-                <img src="https://drive.google.com/uc?export=view&id=0Bxl2-swKlj_PUzJnT3FTQW9uVTQ" class="full-width-image" />
+                <img src="app/img/fluffy-3.jpg" class="full-width-image" />
             </div>
             <div class="col col--one-fifth-tablet no-gutter">
-                <img src="https://drive.google.com/uc?export=view&id=0Bxl2-swKlj_PTWJhTzhBNVdidWM" class="full-width-image" />
+                <img src="app/img/fluffy-1.jpg" class="full-width-image" />
             </div>
         </div>
     </section>
-    <section id="playtime">
+    <section id="special-care">
         <div class="container">
             <div class="row vertical-padding-top">
                 <div class="col col--two-thirds-tablet">
@@ -190,6 +190,7 @@
                 </div>
             </div>
         </div>
+    </section>
     <section>
         <div class="container">
             <div class="row vertical-padding-top">
@@ -211,11 +212,6 @@
                     balance will not be 100%.</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="vertical-padding-top">
-            <img src="http://placehold.it/1200x400" class="full-width-image" />
         </div>
     </section>
     <section id="why-rehome">
@@ -264,8 +260,7 @@
             <div class="nav__menu">
                 <ul class="">
                     <li class="nav__menu-item hidden-mobile"><a target="_blank" href="https://docs.google.com/forms/d/1ATpLlG8DU_fxCqqnRsfFfFTdqopS5_oKcjJyeAf9ps0/viewform"><button class="btn btn-primary">Adopt Moya + Fluffy</button></a></li>
-                    <li class="nav__menu-item"><a href="">Privacy Policy</a></li>
-                    <li class="nav__menu-item"><a href="">Contact Me</a></li>
+                    <li class="nav__menu-item">Gemma Black</li>
                 </ul>
             </div>
         </nav>

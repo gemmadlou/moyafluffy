@@ -256,8 +256,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Life Savers", cursive;
-  font-weight: 600; }
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; }
 
 h1,
 h2,
@@ -349,7 +349,10 @@ a {
   background-repeat: no-repeat; }
 
 .border-bottom-default {
-  box-shadow: 0 0px 0px 5px rgba(247, 237, 249, 0.65); }
+  box-shadow: 0 1px 0px 0px rgba(247, 71, 127, 0.15); }
+
+.border-white {
+  border: 5px solid white; }
 
 .vertical-padding-top {
   padding-top: 3.2rem; }
@@ -368,6 +371,34 @@ a {
 .full-width-image {
   width: 100%;
   height: auto; }
+
+.nav-padding {
+  position: relative;
+  display: block;
+  margin-top: 54px;
+  width: 100%; }
+  @media only screen and (min-width: 35rem) {
+    .nav-padding {
+      margin-top: 76px; } }
+
+.font-white {
+  color: white; }
+
+.font-attention {
+  color: #FB275A; }
+
+.circular-image {
+  border-radius: 100%; }
+
+img.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }
 
 hr {
   margin-bottom: 1.6rem;
@@ -426,13 +457,14 @@ div {
     .full-nav {
       overflow-y: auto !important; } }
   .full-nav .full-nav__item .full-nav__item-link {
-    font-family: "Life Savers", cursive;
+    font-family: "Poppins", sans-serif;
     display: block;
     padding: 1.6rem 0;
     font-size: 1.5rem;
     line-height: 1.6rem;
     text-transform: capitalize;
-    font-weight: 600; }
+    font-weight: 400;
+    top: -250px; }
     @media screen and (min-width: 35rem) {
       .full-nav .full-nav__item .full-nav__item-link {
         font-size: 2rem;
@@ -512,16 +544,13 @@ button.btn.btn-primary {
   .canvas .canvas__play-button {
     font-size: 1.85rem;
     line-height: 2.4rem;
-    cursor: pointer;
-    font-family: "Life Savers", cursive; }
+    cursor: pointer; }
     @media screen and (min-width: 35rem) {
       .canvas .canvas__play-button {
         font-size: 3.8rem;
         line-height: 4rem; } }
-  .canvas .canvas__play-button.canvas__play-button-primary {
-    color: #ffffff; }
-    .canvas .canvas__play-button.canvas__play-button-primary:hover {
-      opacity: 0.85; }
+  .canvas .canvas__play-button.canvas__play-button-primary:hover {
+    opacity: 0.85; }
 
 .sheen {
   position: absolute;
@@ -535,6 +564,12 @@ button.btn.btn-primary {
 .sheen.sheen-dark {
   background-color: black;
   opacity: 0.75; }
+
+.sheen.sheen-pockerdots {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHElEQVQIW2NUlZf6f/vhM0YGKIAzMARgKjFUAABP5QgFz2UNowAAAABJRU5ErkJggg==) repeat; }
+
+.sheen.sheen-math {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVQIW2OMq7zlw4ADMIIkF7WrbcEmP+gkAarWGgXyq5CNAAAAAElFTkSuQmCC) repeat; }
 
 .lightbox {
   position: fixed;
@@ -591,7 +626,11 @@ body {
   min-height: 50rem; }
 
 header {
-  z-index: 10; }
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white; }
 
 .dropdown-section {
   z-index: 50; }
@@ -601,5 +640,21 @@ footer .nav__menu-item:first-child {
 
 ul {
   margin-left: 1.6rem; }
+
+.bottom-page-border {
+  position: fixed;
+  width: 100%;
+  height: 5px;
+  background-color: #FB275A;
+  left: 0;
+  bottom: 0;
+  z-index: 10; }
+
+section:before:not(#meet) {
+  position: relative;
+  display: block;
+  content: " ";
+  height: 35px;
+  visibility: hidden; }
 
 /*# sourceMappingURL=main.css.map */

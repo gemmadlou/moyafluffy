@@ -11,12 +11,10 @@
 
         @include h1;
         cursor: pointer;
-        font-family: $headline-font;
 
     }
 
     .canvas__play-button.canvas__play-button-primary {
-        color: $color-primary;
 
         &:hover {
             opacity: 0.85;
