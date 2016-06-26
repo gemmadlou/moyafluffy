@@ -425,8 +425,19 @@ div {
  * .nav class element
  */
 .nav {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
+  -webkit-justify-content: space-between;
+  /* Safari 6.1+ */
   justify-content: space-between;
+  -webkit-align-items: center;
   align-items: center;
   padding: 0 1.6rem; }
   .nav ul {
@@ -478,6 +489,14 @@ div {
       margin: 0 auto; } }
 
 .row {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
   flex-wrap: wrap; }
   .row.row--contain {
@@ -537,9 +556,22 @@ button.btn.btn-primary {
     background-color: #F77090; }
 
 .canvas {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex; }
   .canvas.canvas--centered-content {
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-box-pack: center;
+    /* justify-content */
+    -webkit-justify-content: center;
+    /* Safari 6.1+ */
     justify-content: center; }
   .canvas .canvas__play-button {
     font-size: 1.85rem;
