@@ -371,7 +371,9 @@ a {
   /* NEW - Chrome */
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .text-center {
   text-align: center; }
