@@ -361,6 +361,14 @@ a {
   padding-bottom: 1.6rem; }
 
 .flex-center-content {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -498,6 +506,7 @@ div {
   display: -webkit-flex;
   /* NEW - Chrome */
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
   .row.row--contain {
     flex-wrap: nowrap; }
@@ -520,12 +529,18 @@ div {
   @media (min-width: 35rem) {
     .col.col--one-quarter-tablet {
       width: 25%; } }
-  @media (min-width: 50rem) {
-    .col.col--one-quarter-desktop {
-      width: 25%; } }
   @media (min-width: 35rem) {
     .col.col--three-quarter-tablet {
       width: 75%; } }
+  @media (min-width: 50rem) {
+    .col.col--one-third-desktop {
+      width: 33.33333%; } }
+  @media (min-width: 50rem) {
+    .col.col--one-quarter-desktop {
+      width: 25%; } }
+  @media (min-width: 50rem) {
+    .col.col--two-thirds-desktop {
+      width: 66.66667%; } }
   @media (min-width: 50rem) {
     .col.col--three-quarter-desktop {
       width: 75%; } }
